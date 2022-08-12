@@ -80,7 +80,7 @@ export const ItemsContextProvider = ({ children }) => {
 
     const fetchItems = useCallback(async (listId) => {
         try {
-            const data = await fetch(`https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/lists/${listId}/items`);
+            const data = await fetch(`https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/items/${listId}/items`);
             const result = await data.json();
 
             if(result) {
